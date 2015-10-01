@@ -1,0 +1,5 @@
+*.project
+InClassLabs/bin/week2/W2L3.class
+*.class
+InClassLabs/.settings/org.eclipse.jdt.core.prefs
+*.classpath
