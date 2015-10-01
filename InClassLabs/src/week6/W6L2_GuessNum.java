@@ -12,10 +12,12 @@ public class W6L2_GuessNum {
 		userNum=input.nextInt();
 		if(userNum==rand)
 			System.out.printf("Congratz, you guessed correctly!");
-		else if(userNum > rand)
-			System.out.printf("Sorry, the number you guessed is too big.\nThe correct number was %d.", rand);
-		else if(userNum < rand)
+		else {
+			if(userNum > rand)
+				System.out.printf("Sorry, the number you guessed is too big.\nThe correct number was %d.", rand);
+			else 
 			System.out.printf("Sorry, the number you guessed is too small.\nThe correct number was %d.",rand);	
+		}
 		input.close();
 
 	}
