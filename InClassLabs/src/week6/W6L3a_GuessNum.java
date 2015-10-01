@@ -7,7 +7,7 @@ public class W6L3a_GuessNum {
 		int min=1, max=10;
 		Scanner input = new Scanner(System.in);
 				
-		System.out.print("I have a number inbetween 1 & 10, "
+		System.out.print("I have a number inbetween 1 & 10, " 
 				+ "can you guess what it is? ");
 		rand = min+(int)(Math.random()*max);
 		//System.out.print(rand);
