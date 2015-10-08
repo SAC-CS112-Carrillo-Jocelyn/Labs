@@ -9,7 +9,7 @@ public class W7L1_GuessNum_GUI {
 		String uString, message;
 		
 		rand = min+(int)(Math.random()*max);
-		 userNum=
+		userNum=
 				Integer.parseInt(JOptionPane.showInputDialog //Inter.parseInt(); --Converts string to int
 				(" I have a number inbetween 1 & 10, can you guess what it is? "));
 		 
