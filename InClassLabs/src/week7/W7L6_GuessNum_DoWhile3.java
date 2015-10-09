@@ -16,17 +16,19 @@ public class W7L6_GuessNum_DoWhile3 {
 		{
 			System.out.print("I have a number inbetween 1 & 10, "
 			+ "can you guess what it is? ");
+			//create & store random#
 			rand = 1+(int)(Math.random()*10);
-			//System.out.print(rand);
+			//store user#
 			userNum=input.nextInt();
 			
+			//A check to make sure user entered a # inbetween 1 & 10
 			if(userNum > 10 || userNum < 1){
 				System.out.printf("The number %d is out of the valid range!", 
 						userNum);
 			}
+			//Logic to check user# & random# 
 			else{
-				loopNum++; //adds 1 to loopNum 
-						   //only if user enters a valid number
+				loopNum++; //adds 1 to loopNum only if user enters a valid number
 				if(userNum==rand)
 					System.out.printf("Congratz, you guessed correctly!\n");
 				else{
@@ -36,7 +38,7 @@ public class W7L6_GuessNum_DoWhile3 {
 				}			
 			}
 		}
-		while(loopNum<=3);
+		while(loopNum<=3);//User will play the game 3times
 		
 		input.close();
 	}
