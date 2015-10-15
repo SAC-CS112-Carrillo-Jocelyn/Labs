@@ -30,7 +30,6 @@ public class W7L3_RockPaperScisssor_Switch {
 		//Get UserMove
 		do
 		{ 	again = false;	
-			
 			userMove = JOptionPane.showInputDialog("Lets play Rock, Paper, Scissors. Choose your weapon! ");
 			switch(userMove.toLowerCase()){
 			case "r":
