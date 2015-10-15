@@ -1,10 +1,9 @@
 package week8_Test;
-
 import javax.swing.JOptionPane;
-
 public class W8L1_NameBirth {
 
 	public static void main(String[] args) {
+		//Output user name & age
 		String name;
 		int birthYear, age;
 		
