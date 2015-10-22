@@ -76,8 +76,8 @@ public class W9L2_OddEven_GameHistory {
 						if(guess[i]==null){
 						}
 						else{
-							message=message.format(message+"\n You %s by choosing %s. Computer chose %s. ", 
-									winOrLose[i],guess[i],compNumb[i] );
+							message=message.format(message+"\n You %s by choosing %s. "
+								+ "Computer chose %s. ",winOrLose[i],guess[i],compNumb[i] );
 						}
 					}
 					JOptionPane.showMessageDialog(null, message+message2);	
