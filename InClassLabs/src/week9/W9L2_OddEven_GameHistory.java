@@ -67,8 +67,8 @@ public class W9L2_OddEven_GameHistory {
 				if(!playAgain)
 				{
 					String message ="Game History: ";
-					String message2= " ";
-					message2=message2.format("\n Overall you won %s times. "
+					String message2= "---------------------- ";
+					message2=message2.format("\n"+message2+"\n Overall you won %s times. "
 							+ "Chose odd %s times and even %s times. ", winNumb,oddNumb,evenNumb);
 					
 					for(int i=0; i<guess.length; i++)
