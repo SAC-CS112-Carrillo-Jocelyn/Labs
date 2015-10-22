@@ -7,7 +7,7 @@ import javax.swing.JOptionPane;
 public class W9L3_classRndNumb {
 	
 	public static int NumberGenerator(){
-		int a = 1+(int)(Math.random()*6);
+		int a = 1+(int)(Math.random()*10);
 		return a;
 	}
 
