@@ -5,7 +5,7 @@ import javax.swing.JOptionPane;
 public class W9L2_OddEven_GameHistory {
 
 	public static void main(String[] args) {
-		int diceNumb, remainder, d=-1, roundsPlayed=0;
+		int diceNumb, remainder, d=(-1), roundsPlayed=0;
 		int winNumb=0, oddNumb=0, evenNumb=0, maxRounds=9;
 		String oddOrEven, likeToPlayAgain;
 		boolean playAgain=false;
