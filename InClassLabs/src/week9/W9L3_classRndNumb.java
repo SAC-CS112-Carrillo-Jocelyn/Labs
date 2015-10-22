@@ -1,7 +1,4 @@
 package week9;
-
-import java.util.Scanner;
-
 import javax.swing.JOptionPane;
 
 public class W9L3_classRndNumb {
@@ -12,17 +9,20 @@ public class W9L3_classRndNumb {
 	}
 
 	public static void main(String[] args) {
+		//Declare
 		int diceNumb, remainder,d=-1;
 		String oddOrEven;
-		Scanner input=new Scanner(System.in);
 		
+		//Start
 		JOptionPane.showMessageDialog(null, "Throw a dice!");
+		
 		diceNumb= NumberGenerator();
-		oddOrEven=(JOptionPane.showInputDialog(null, "Do you think the number rolled is odd or even?").toLowerCase());
+		
+		oddOrEven=(JOptionPane.showInputDialog
+				(null, "Do you think the number rolled is odd or even?").toLowerCase());
 
 		//a odd # will have a remainder of 1, while a even # will have a remainder of 0
 		remainder = diceNumb%2; 
-		System.out.print(diceNumb +" "+ remainder);//Debug
 		
 		if(oddOrEven.equals("odd")||oddOrEven.equals("even")){
 			switch(oddOrEven){
