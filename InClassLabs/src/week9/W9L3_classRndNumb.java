@@ -3,7 +3,7 @@ import javax.swing.JOptionPane;
 
 public class W9L3_classRndNumb {
 	
-	public static int NumberGenerator(){
+	public static int RandomNumber(){
 		int a = 1+(int)(Math.random()*10);
 		return a;
 	}
@@ -16,7 +16,7 @@ public class W9L3_classRndNumb {
 		//Start
 		JOptionPane.showMessageDialog(null, "Throw a dice!");
 		
-		diceNumb= NumberGenerator();
+		diceNumb= RandomNumber();
 		
 		oddOrEven=(JOptionPane.showInputDialog
 				(null, "Do you think the number rolled is odd or even?").toLowerCase());
