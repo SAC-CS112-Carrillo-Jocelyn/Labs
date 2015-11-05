@@ -1,7 +1,5 @@
 package week8_Test;
-
 import javax.swing.JOptionPane;
-
 public class W8L4_NameBirth_3Times {
 
 	public static void main(String[] args) {

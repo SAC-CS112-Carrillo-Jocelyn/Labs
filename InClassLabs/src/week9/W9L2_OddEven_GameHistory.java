@@ -19,7 +19,7 @@ public class W9L2_OddEven_GameHistory {
 			JOptionPane.showMessageDialog(null, "Throw a dice!");
 			diceNumb= 1+(int)(Math.random()*6); //make random #
 			oddOrEven=(JOptionPane.showInputDialog(null,
-					"Do you think the number rolled is odd or even?").toLowerCase());
+					"Guess:\nDo you think the number rolled is odd or even?").toLowerCase());
 	
 			//a odd # will have a remainder of 1, while a even # will have a remainder of 0
 			remainder = diceNumb%2; 
@@ -68,7 +68,7 @@ public class W9L2_OddEven_GameHistory {
 				{
 					String message ="Game History: ";
 					String message2= "---------------------- ";
-					message2=message2.format("\n"+message2+"\n Overall you won %s times. "
+					message2=String.format("\n"+message2+"\n Overall you won %s times. "
 							+ "Chose odd %s times and even %s times. ", winNumb,oddNumb,evenNumb);
 					
 					for(int i=0; i<guess.length; i++)
@@ -76,7 +76,7 @@ public class W9L2_OddEven_GameHistory {
 						if(guess[i]==null){
 						}
 						else{
-							message=message.format(message+"\n You %s by choosing %s. "
+							message=String.format(message+"\n You %s by choosing %s. "
 								+ "Computer chose %s. ",winOrLose[i],guess[i],compNumb[i] );
 						}
 					}
