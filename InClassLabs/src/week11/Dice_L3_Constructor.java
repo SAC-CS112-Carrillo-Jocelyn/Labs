@@ -14,13 +14,23 @@ public class Dice_L3_Constructor {
 	
 	public int Throw(){
 		for(int i=0;i<diceThrows;i++){
-			diceAveraging=diceAveraging+(1+(int)(Math.random()*6));
+			diceAveraging=diceAveraging+Random(1,6);
 		}
 		diceNumber = diceAveraging/diceThrows;
 		return diceNumber;
 	}
-	
+	public int Throw(int bounces){
+		for(int i=0;i<bounces;i++){
+			diceAveraging=diceAveraging+Random(1,6);
+		}
+		diceNumber = diceAveraging/bounces;
+		return diceNumber;
+	}
 	public int Value(){
 		return diceNumber;
+	}
+	private int Random(int low, int high){
+		
+		return low+(int)(Math.random()*high);
 	}
 }
