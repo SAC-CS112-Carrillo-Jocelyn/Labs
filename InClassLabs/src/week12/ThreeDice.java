@@ -1,13 +1,13 @@
 package week12;
 
-public class ThreeDice {
+public class ThreeDice{
 
 	public int Throw() {
 		
-		Dice Dice1 = new Dice();
-		Dice Dice2 = new Dice();
-		Dice Dice3 = new Dice();
-		return (Dice1.Throw() + Dice2.Throw() + Dice3.Throw()) / 3;
+		Dice D1 = new Dice();
+		Dice D2 = new Dice();
+		Dice D3 = new Dice();
+		return (D1.Throw() + D2.Throw() + D3.Throw()) / 3;
 	}
 	
 

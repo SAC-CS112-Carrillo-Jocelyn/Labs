@@ -9,8 +9,11 @@ public class DiceApp {
 		int i = d.Throw();
 		int iThrow = dice.Throw(); 
 		System.out.println("Dice # is: " + i);
-		System.out.println("3 Dice throw is: " + iThrow);
-		System.out.println("ThreeDice: "+ dice.toString());
+		System.out.println(" ThreeDice is: "+ iThrow);
+		//added for lab2
+		System.out.println("dice.toString() = " + dice.toString());
+		System.out.println("d.toString() = "+ d.toString());
+		
 
 	}
 }
