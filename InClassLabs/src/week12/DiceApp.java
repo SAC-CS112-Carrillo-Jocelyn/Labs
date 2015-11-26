@@ -3,8 +3,10 @@ package week12;
 public class DiceApp {
 
 	public static void main(String[] args) {
+		TrippleDice ddd = new TrippleDice();
 		ThreeDice dice = new ThreeDice();
 		Dice d = new Dice();
+		
 		
 		int i = d.Throw();
 		int iThrow = dice.Throw(); 
@@ -16,6 +18,9 @@ public class DiceApp {
 		//System.out.println("d.toString() = "+ d.toString());
 		
 		//added for lab3
-		System.out.println(dice.toString());
+		//System.out.println(dice.toString());
+		
+		//added for lab4
+		System.out.println(ddd.Throw());
 	}
 }
