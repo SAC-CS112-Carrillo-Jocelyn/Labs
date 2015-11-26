@@ -21,6 +21,6 @@ public class DiceApp {
 		//System.out.println(dice.toString());
 		
 		//added for lab4
-		System.out.println(ddd.Throw3());
+		System.out.println(ddd.Throw());
 	}
 }

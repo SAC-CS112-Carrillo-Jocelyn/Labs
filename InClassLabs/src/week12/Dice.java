@@ -1,9 +1,10 @@
 package week12;
 
 public class Dice {
-
+	protected int d1;
+	
 	public int Throw(){
 		
-		return 1+(int)(Math.random()*6);
+		return d1 = 1+(int)(Math.random()*6);
 	}
 }
