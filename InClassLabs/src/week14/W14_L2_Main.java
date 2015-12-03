@@ -1,10 +1,10 @@
 package week14;
 import javax.swing.JOptionPane;
-import week14.W14_L1_DiceClass;
+import week14.W14_L2_Dice;
+public class W14_L2_Main {
 
-public class W14_L1_Catch {
 	public static void main(String[] args) {
-		W14_L1_DiceClass d = new W14_L1_DiceClass();
+		W14_L2_Dice d = new W14_L2_Dice();
 		boolean retry=true;
 		
 		//Will play until player says n
@@ -15,11 +15,11 @@ public class W14_L1_Catch {
 					//# of dice player wants in current game
 					int dice =Integer.parseInt(JOptionPane.showInputDialog
 							("How many dice would you like to roll?"));
-					d.DiceThrown(dice);
 					retry = false;
+					d.DiceThrown(dice);
 				}
 				catch(Exception e){
-					 JOptionPane.showMessageDialog(null,"Please input a #");
+					 JOptionPane.showMessageDialog(null,"Please input a valid #");
 					 retry = true;
 				}
 			}while(retry);
