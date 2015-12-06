@@ -20,10 +20,10 @@ public class W14_L2_Dice {
 		
 
 		//Throws Dice
-		public int DiceThrown(int diceThrown) throws Exception{
+		public int DiceThrown(int diceThrown) throws IllegalArgumentException{
 			
 			if(0>diceThrown){
-				throw new IllegalArgumentException("Please input a valid #");
+				throw new IllegalArgumentException("IllegalArgument: Please input a valid #");
 			}
 			else{
 				high = (6*diceThrown); mid =(high/2); // find high & low ranges

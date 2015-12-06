@@ -14,13 +14,19 @@ public class W14_L2_Main {
 				try{
 					//# of dice player wants in current game
 					int dice =Integer.parseInt(JOptionPane.showInputDialog
-							("How many dice would you like to roll?"));
+						("How many dice would you like to roll?"));
 					retry = false;
 					d.DiceThrown(dice);
 				}
-				catch(Exception e){
-					 JOptionPane.showMessageDialog(null,"Please input a valid #");
-					 retry = true;
+				//need # not string
+				catch(NumberFormatException e){
+					JOptionPane.showMessageDialog(null,"NumberFormat: Enter a #");
+					retry = true;
+				}
+				//thrown if we get negative #
+				catch(IllegalArgumentException e){
+					JOptionPane.showMessageDialog(null,e.getMessage());
+					retry = true;
 				}
 			}while(retry);
 			
